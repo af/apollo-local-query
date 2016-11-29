@@ -1,0 +1,27 @@
+{
+  "name": "apollo-local-query",
+  "version": "0.1.0",
+  "description": "Local networkInterface for apollo-client server rendering",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/af/apollo-local-query.git"
+  },
+  "keywords": [
+    "apollo",
+    "apollo-client",
+    "graphql",
+    "server",
+    "rendering",
+    "networkInterface"
+  ],
+  "author": "Aaron Franks (http://aaronfranks.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/af/apollo-local-query/issues"
+  },
+  "homepage": "https://github.com/af/apollo-local-query#readme"
+}
