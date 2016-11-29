@@ -11,6 +11,7 @@ process as your rendering code.
 ## Usage
 
 ```js
+const {createLocalInterface} = require('apollo-local-query')
 const graphql = require('graphql')
 const schema = require('path/to/your/graphql_schema')
 
