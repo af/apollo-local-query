@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/af/apollo-local-query/issues"
   },
+  "dependencies": {
+    "debug": "2.3.3"
+  },
   "homepage": "https://github.com/af/apollo-local-query#readme"
 }
