@@ -20,8 +20,9 @@ const createLocalInterface = (graphql, schema, {rootValue = null, context = null
 
     return {
         query: ({query, variables, operationName, debugName}) => {
-            const start = new Date
+            const start = new Date()
             const result = execute(schema, query, rootValue, context, variables, operationName)
+
             return result.then(data => {
                 debug(`${operationName} (${(new Date() - start)}ms)`)
                 return data
