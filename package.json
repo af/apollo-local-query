@@ -1,6 +1,6 @@
 {
   "name": "apollo-local-query",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Local networkInterface for apollo-client server rendering",
   "main": "index.js",
   "scripts": {
