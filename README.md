@@ -7,6 +7,11 @@ same server process. Rather than go out and back through the networking stack
 (eg. connecting to localhost), with this module the query runs in the same
 process as your rendering code.
 
+## Installation
+
+```
+npm install --save apollo-local-query
+```
 
 ## Basic Usage
 
