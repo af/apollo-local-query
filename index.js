@@ -26,7 +26,7 @@ const createLocalInterface = (graphql, schema, {rootValue = null, context = null
             try {
                 result = execute(schema, query, rootValue, context, variables, operationName)
             } catch (err) {
-                return Promise.reject(err);
+                return Promise.reject(err)
             }
 
             return result.then(data => {
