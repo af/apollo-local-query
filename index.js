@@ -21,11 +21,14 @@ const createLocalInterface = (graphql, schema, {rootValue = null, context = null
     return {
         query: ({query, variables, operationName, debugName}) => {
             const start = new Date()
-            var result
+            let result
 
+            // execute() can throw if its arguments aren't valid, so we need to wrap with try/catch
+            // See http://graphql.org/graphql-js/execution/#execute
             try {
                 result = execute(schema, query, rootValue, context, variables, operationName)
             } catch (err) {
+                debug(`${operationName} failed to execute (${err.message})`)
                 return Promise.reject(err)
             }
 
