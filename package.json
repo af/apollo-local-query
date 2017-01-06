@@ -7,6 +7,7 @@
     "node": ">=6"
   },
   "scripts": {
+    "lint": "eslint *.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,6 +29,10 @@
   },
   "dependencies": {
     "debug": "2.3.3"
+  },
+  "devDependencies": {
+    "eslint": "3.12.2",
+    "eslint-config-af": "af/eslint-config-af#b33c1bb"
   },
   "homepage": "https://github.com/af/apollo-local-query#readme"
 }
