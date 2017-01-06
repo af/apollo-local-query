@@ -8,7 +8,7 @@
   },
   "scripts": {
     "lint": "eslint *.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/painless tests/*.js"
   },
   "repository": {
     "type": "git",
@@ -32,7 +32,8 @@
   },
   "devDependencies": {
     "eslint": "3.12.2",
-    "eslint-config-af": "af/eslint-config-af#b33c1bb"
+    "eslint-config-af": "af/eslint-config-af#b33c1bb",
+    "painless": "0.9.5"
   },
   "homepage": "https://github.com/af/apollo-local-query#readme"
 }
