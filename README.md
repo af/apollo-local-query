@@ -1,5 +1,8 @@
 # apollo-local-query
 
+[![Build Status](https://travis-ci.org/af/apollo-local-query.svg?branch=master)](https://travis-ci.org/af/apollo-local-query)
+
+
 A local GraphQL networkInterface for [apollo-client](https://github.com/apollostack/apollo-client).
 
 This is useful for server-rendering a React/Apollo app when your GraphQL server is running in the
