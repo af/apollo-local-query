@@ -16,7 +16,7 @@ process as your rendering code.
 npm install --save apollo-local-query
 ```
 
-This module uses several ES6 features, so nodejs **v6.0 or above** are required.
+This module uses several ES6 features, so nodejs **v6.0 or above** is required.
 
 ## Basic Usage
 
