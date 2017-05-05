@@ -11,4 +11,3 @@ test('it doesn\'t blow up for the most basic usage', () => {
     const result = iface.query({})
     return assert.eventually.deepEqual(result, {foo: 'bar'})
 })
-

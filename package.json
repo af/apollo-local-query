@@ -2,38 +2,53 @@
   "name": "apollo-local-query",
   "version": "0.3.0",
   "description": "Local networkInterface for apollo-client server rendering",
-  "main": "index.js",
+  "main": "lib/apolloLocalQuery.min.js",
   "engines": {
     "node": ">=6"
   },
   "scripts": {
-    "lint": "eslint *.js",
-    "test": "./node_modules/.bin/painless tests/*.js"
+    "build": "webpack --env build",
+    "dev": "webpack --progress --colors --watch --env dev",
+    "test": "mocha --compilers js:babel-core/register --colors ./test/*.spec.js",
+    "test:watch": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js"
+  },
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-core": "6.24.1",
+    "babel-eslint": "7.2.3",
+    "babel-loader": "7.0.0",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-preset-es2015": "6.24.1",
+    "chai": "3.5.0",
+    "debug": "^2.6.6",
+    "eslint": "3.19.0",
+    "eslint-config-af": "af/eslint-config-af#b33c1bb",
+    "eslint-loader": "1.7.1",
+    "mocha": "3.3.0",
+    "painless": "0.9.5",
+    "webpack": "2.4.1",
+    "yargs": "7.1.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/af/apollo-local-query.git"
+    "url": "https://github.com/af/apollo-local-query.git"
   },
   "keywords": [
-    "apollo",
-    "apollo-client",
-    "graphql",
-    "server",
-    "rendering",
-    "networkInterface"
+    "webpack",
+    "es6",
+    "starter",
+    "library",
+    "universal",
+    "umd",
+    "commonjs"
   ],
   "author": "Aaron Franks (http://aaronfranks.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/af/apollo-local-query/issues"
   },
+  "homepage": "https://github.com/af/apollo-local-query#readme",
   "dependencies": {
-    "debug": "2.3.3"
-  },
-  "devDependencies": {
-    "eslint": "3.12.2",
-    "eslint-config-af": "af/eslint-config-af#b33c1bb",
-    "painless": "0.9.5"
-  },
-  "homepage": "https://github.com/af/apollo-local-query#readme"
+    "debug": "^2.6.5"
+  }
 }
