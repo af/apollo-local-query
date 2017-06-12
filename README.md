@@ -36,6 +36,12 @@ if (isServer) {
 const myClient = new ApolloClient(options)
 ```
 
+Note: If you're compiling your server-side code, GraphQL should be imported using the namespace import syntax, as the default import syntax will return `undefined`. For example:
+
+```
+import * as graphql from 'graphql';
+```
+
 ## Logging Queries
 
 This module uses [debug](https://www.npmjs.com/package/debug) to enable optional
