@@ -28,12 +28,12 @@
     "url": "https://github.com/af/apollo-local-query/issues"
   },
   "dependencies": {
-    "debug": "2.3.3"
+    "debug": "^2.6.9"
   },
   "devDependencies": {
-    "eslint": "3.12.2",
+    "eslint": "^4.10.0",
     "eslint-config-af": "af/eslint-config-af#b33c1bb",
-    "painless": "0.9.5"
+    "painless": "^0.9.5"
   },
   "homepage": "https://github.com/af/apollo-local-query#readme"
 }
