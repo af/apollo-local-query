@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/af/apollo-local-query.svg?branch=master)](https://travis-ci.org/af/apollo-local-query)
 
 
-A local GraphQL networkInterface for [apollo-client](https://github.com/apollostack/apollo-client) **1.x**. If you're using Apollo Client 2.x and above, please see [this issue](https://github.com/af/apollo-local-query/issues/12)
+A local GraphQL networkInterface for [apollo-client](https://github.com/apollostack/apollo-client) **1.x**. If you're using Apollo Client 2.x and above, you probably want to use [SchemaLink](https://www.apollographql.com/docs/link/links/schema.html) instead!
 
 This is useful for server-rendering a React/Apollo app when your GraphQL server is running in the
 same server process. Rather than go out and back through the networking stack
