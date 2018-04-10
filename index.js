@@ -32,7 +32,7 @@ const createLocalInterface = (graphql, schema, {rootValue = null, context = null
                 return Promise.reject(err)
             }
 
-            return result.then(data => {
+            return Promise.resolve(result).then(data => {
                 debug(`${operationName} (${(new Date() - start)}ms)`)
                 return data
             })
